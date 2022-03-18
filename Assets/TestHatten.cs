@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Magic
+// 3/18 MagicクラスをBossクラスへ修正
+public class Boss
 {
     //int型の変数mpを宣言し、53で初期化してください
     private int mp = 53;
@@ -40,7 +41,8 @@ public class TestHatten : MonoBehaviour
     void Start()
     {
         // Magicクラスの変数を宣言してインスタンスを代入
-        Magic lastMagic = new Magic();
+        // 3/18MagicクラスをBossクラスへ修正
+        Boss lastMagic = new Boss();
 
         // Magic関数を呼び出して、魔法を使ってください
         lastMagic.MagicAttack();
